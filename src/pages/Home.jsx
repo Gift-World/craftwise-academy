@@ -7,6 +7,9 @@ import About from '../components/About';
 import WhatWeDo from '../components/WhatWeDo';
 import SolutionSection from '../components/Solution/SolutionSection';
 import OfficeLabsSection from '../components/OfficeLabs/OfficeLabsSection';
+import BenefitsSection from '../components/Benefits/BenefitsSection';
+import ImmersiveSection from '../components/Immersive/ImmersiveSection';
+import ExperienceSection from '../components/Experience/ExperienceSection';
 
 function Home() {
   return (
@@ -26,6 +29,9 @@ function Home() {
     <WhatWeDo />
     <SolutionSection />
     <OfficeLabsSection />
+    <BenefitsSection /> 
+    <ImmersiveSection/>
+    <ExperienceSection />
 
     </div>
   )
