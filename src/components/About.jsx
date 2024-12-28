@@ -8,7 +8,7 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-white to-orange-50">
+    <div id='about' className="min-h-screen pt-16 bg-gradient-to-b from-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           ref={ref}
@@ -18,8 +18,16 @@ const About = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <div>
+          <motion.h1 
+              className="text-5xl font-bold text-gray-600 mb-7 px-24 underline"
+              initial={{ opacity: 0.4, x: -40 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 0.5 }}
+            >
+              About us
+            </motion.h1>
             <motion.h1 
-              className="text-4xl font-bold text-gray-900 mb-6"
+              className="text-4xl font-semibold text-gray-900 mb-6"
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}

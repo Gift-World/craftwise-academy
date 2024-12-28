@@ -1,7 +1,13 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.nav 
       initial={{ y: -100 }}
@@ -11,23 +17,26 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-2xl font-bold text-orange-500">
+            <button
+              onClick={() => scrollToSection('about')}
+              className="text-2xl font-bold text-orange-500 focus:outline-none"
+            >
               CraftWise Academy
-            </Link>
+            </button>
           </div>
           <div className="flex space-x-8">
-            <Link 
-              to="/about"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors"
+            <button
+              onClick={() => scrollToSection('about')}
+              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
             >
               About
-            </Link>
-            <Link 
-              to="/what-we-do"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors"
+            </button>
+            <button
+              onClick={() => scrollToSection('what-we-do')}
+              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
             >
               What We Do
-            </Link>
+            </button>
           </div>
         </div>
       </div>

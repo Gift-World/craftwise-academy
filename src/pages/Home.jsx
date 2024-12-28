@@ -2,12 +2,14 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 import Hero from '../components/Hero'
-// import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
+import About from '../components/About';
+import WhatWeDo from '../components/WhatWeDo';
 
 function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
 
 
 <motion.div
@@ -18,6 +20,8 @@ function Home() {
       
       <Hero />
     </motion.div>
+    <About />
+    <WhatWeDo />
 
     </div>
   )
