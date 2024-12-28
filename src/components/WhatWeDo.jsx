@@ -74,7 +74,7 @@ const WhatWeDo = () => {
           className="text-center mb-12"
         >
          
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto p-7">
             Whether you are an aspiring manager, a seasoned leader, or an HR professional seeking innovative training solutions, CraftWise Academy is crafted just for you.
           </p>
         </motion.div>
