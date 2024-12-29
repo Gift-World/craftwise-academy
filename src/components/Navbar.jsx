@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -37,6 +38,14 @@ const Navbar = () => {
             >
               How We Work
             </button>
+            <button
+              onClick={() => scrollToSection('programmes')}
+              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
+            >
+              Programmes
+            </button>
+           
+              
           </div>
         </div>
       </div>
