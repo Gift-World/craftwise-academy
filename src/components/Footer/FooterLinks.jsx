@@ -21,10 +21,10 @@ const links = {
     { name: "Partners", sectionId: "partners" }
   ],
   "Contact Info": [
-    { name: "info@example.com", sectionId: "email" },
-    { name: "+1 (555) 123-4567", sectionId: "phone" },
-    { name: "123 Business Street", sectionId: "address" },
-    { name: "New York, NY 10001", sectionId: "address-2" }
+    { name: "info@craftwiseacademy.com", sectionId: "email" },
+    { name: "+254 715 208", sectionId: "phone" },
+  
+    { name: "Nairobi , Kenya", sectionId: "address-2" }
   ]
 };
 
