@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ProgramCard from '../components/Programs/ProgramCard';
+import Footer from '../components/Footer/Footer';
 
 const programs = [
   {
@@ -150,6 +151,7 @@ const Programs = () => {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };
