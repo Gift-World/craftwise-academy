@@ -38,8 +38,8 @@ const ExperienceSection = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">CRAFTWISE EXPERIENCE</h2>
-          <h3 className="text-2xl text-orange-500 mb-12">IMMERSIVE</h3>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">FLEXIBLE TRAINING</h2>
+          <h3 className="text-2xl text-orange-500 mb-12">FORMATS</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {experiences.map((experience, index) => (

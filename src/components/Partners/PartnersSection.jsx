@@ -10,12 +10,12 @@ const partners = [
   },
   {
     name: "Career Kickstart KE",
-    logo: "/partners/career-kickstart-logo.png",
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQE-x0yP7DJVag/company-logo_200_200/company-logo_200_200/0/1630560839614?e=2147483647&v=beta&t=cL61HW_DLGGeKt3W0ACUCXSm9u_p8h-O5rCq0oKZTDs",
     delay: 0.4
   },
   {
     name: "Ultra Events",
-    logo: "/partners/ultra-events-logo.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQV7FhM9Tr70m88wqKnvSos1JkeYoafZdYMg&s",
     delay: 0.6
   }
 ];
