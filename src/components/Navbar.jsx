@@ -1,140 +1,94 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navLinks = [
+    { title: 'Home', path: '/' },
+    { title: 'Benefits', path: '/benefits' },
+    { title: 'Programs', path: '/programs' },
+    { title: 'Contact us', path: '/contact' }
+  ];
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="fixed w-full bg-white shadow-lg z-50"
-    >
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link
-              to="/"
-              className="text-2xl font-bold text-orange-500 focus:outline-none"
-            >
-              CraftWise Academy
-            </Link>
+          <Link 
+            to="/" 
+            className="text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors"
+          >
+            CraftWise Academy
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.title}
+                to={link.path}
+                className="relative group px-3 py-2 text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                {link.title}
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+              </Link>
+            ))}
           </div>
 
-          {/* Hamburger Menu (Mobile) */}
-          <div className="lg:hidden">
-            <button
-              type="button"
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-500 focus:outline-none"
-            >
-              <span className="sr-only">Open main menu</span>
-              {isMenuOpen ? (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="hidden lg:flex space-x-8">
-            <Link
-              to="/"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
-            >
-              Home
-            </Link>
-            <Link
-              to="/benefits"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
-            >
-              Benefits
-            </Link>
-            <Link
-              to="/programs"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
-            >
-              Programs
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
-            >
-              Contact Us
-            </Link>
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-700 hover:text-orange-500 transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-4 space-y-2">
-            <Link
-              to="/"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-orange-500 rounded"
-              onClick={toggleMenu}
-            >
-              Home
-            </Link>
-            <Link
-              to="/benefits"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-orange-500 rounded"
-              onClick={toggleMenu}
-            >
-              Benefits
-            </Link>
-            <Link
-              to="/programs"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-orange-500 rounded"
-              onClick={toggleMenu}
-            >
-              Programs
-            </Link>
-            <Link
-              to="/contact"
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-orange-500 rounded"
-              onClick={toggleMenu}
-            >
-              Contact Us
-            </Link>
+        {/* Mobile Navigation */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isOpen
+              ? 'max-h-screen opacity-100 visible'
+              : 'max-h-0 opacity-0 invisible'
+          }`}
+        >
+          <div className="pt-2 pb-4 space-y-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.title}
+                to={link.path}
+                className="block px-3 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-md transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.title}
+              </Link>
+            ))}
           </div>
-        )}
+        </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
