@@ -1,4 +1,4 @@
-import { FaTwitter, FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
+import { FaTwitter,  FaFacebook  } from 'react-icons/fa';
 
 
 export default function Footer() {
@@ -14,12 +14,12 @@ export default function Footer() {
       <li className="flex justify-center items-center w-12 h-12 rounded-full border border-[#1aeeef] hover:bg-[#1aeeef] transition duration-500">
         <a href="#"><FaFacebook size={20}/></a>
       </li>
-      <li className="flex justify-center items-center w-12 h-12 rounded-full border border-[#1aeeef] hover:bg-[#1aeeef] transition duration-500">
+      {/* <li className="flex justify-center items-center w-12 h-12 rounded-full border border-[#1aeeef] hover:bg-[#1aeeef] transition duration-500">
         <a href="#"><FaInstagram size={20}/></a>
       </li>
       <li className="flex justify-center items-center w-12 h-12 rounded-full border border-[#1aeeef] hover:bg-[#1aeeef] transition duration-500">
         <a href="#"><FaTiktok size={20}/></a>
-      </li>
+      </li> */}
 
      
     </ul>
