@@ -16,6 +16,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex space-x-8">
+          <Link to="/" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+              Home
+            </Link>
             
             <Link to="/benefits" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Benefits
