@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 import Hero from '../components/Hero'
-// import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import About from '../components/About';
 import WhatWeDo from '../components/WhatWeDo';
 import SolutionSection from '../components/Solution/SolutionSection';
@@ -14,12 +14,12 @@ import WhyItMattersSection from '../components/WhyItMatters/WhyItMattersSection'
 import ImpactSection from '../components/Impact/ImpactSection';
 import PartnersSection from '../components/Partners/PartnersSection'; 
 import Footer from '../components/Footer/Footer';
-import Header from '../components/Header';
+// import Header from '../components/Header';
 
 function Home() {
   return (
     <div>
-      <Header />
+      <Navbar />
       <main>
       {/* <Navbar /> */}
 
