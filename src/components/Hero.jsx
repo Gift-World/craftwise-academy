@@ -44,13 +44,7 @@ export default function Hero() {
             EXPERIENCE LEARNING THAT<br />CHANGES EVERYTHING.
           </motion.p>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-primary px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-opacity-90 transition-colors"
-          >
-            Get Started
-          </motion.button>
+        
         </motion.div>
 
         <motion.div

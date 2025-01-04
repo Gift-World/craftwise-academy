@@ -1,14 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Programs from './pages/Programs';
+import BenefitsSection from './components/Benefits/BenefitsSection';
+import ContactSection from './components/Contact/ContactSection';
 
-import Home from "./pages/Home";
+
 
 function App() {
   return (
-    <div>
-      
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/benefits" element={<BenefitsSection />} />
+        <Route path="/contact" element={ <ContactSection  />} />
 
-      <Home />
-      
-    </div>
+        
+
+
+      </Routes>
+    </Router>
   );
 }
 
