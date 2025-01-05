@@ -4,9 +4,9 @@ import { scrollToSection } from './scrollUtils';
 const links = {
   "Quick Links": [
     { name: "Home", sectionId: "home" },
-    { name: "Services", sectionId: "services" },
+   
     { name: "Contact", sectionId: "contact" },
-    { name: "FAQ", sectionId: "faq" }
+
   ],
   "Programs": [
     { name: "Rising Professionals", sectionId: "rising-professionals" },
