@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header className="fixed top-0 w-full bg-primary/90 backdrop-blur-sm z-50">
-      <div className="container mx-auto px-1 py-4 flex justify-between ">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
