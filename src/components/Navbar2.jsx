@@ -27,9 +27,9 @@ export default function Header() {
                      <Link to="/programs" className="text-textPrimary hover:text-secondary transition-colors">
                        Programs
                      </Link>
-                     <Link to="/contact" className="text-textPrimary hover:text-secondary transition-colors">
+                     {/* <Link to="/contact" className="text-textPrimary hover:text-secondary transition-colors">
                        Contact us
-                     </Link>
+                     </Link> */}
           
           {/* <div className="flex gap-4">
             <a href="https://github.com/Gift-World" target="_blank" rel="noopener noreferrer" className="text-textPrimary hover:text-secondary transition-colors">
