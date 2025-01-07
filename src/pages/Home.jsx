@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 
 import Hero from '../components/Hero'
-import Navbar from '../components/Navbar';
+import Navbar2 from '../components/Navbar2';
 import About from '../components/About';
 import WhatWeDo from '../components/WhatWeDo';
 import SolutionSection from '../components/Solution/SolutionSection';
@@ -19,7 +19,7 @@ import Footer from '../components/Footer/Footer';
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <main>
       {/* <Navbar /> */}
 
