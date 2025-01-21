@@ -14,7 +14,7 @@ export default {
         textSecondary: "#8892b0"
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },

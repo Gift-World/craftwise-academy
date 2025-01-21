@@ -32,7 +32,7 @@ export default function Hero() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            CRAFTWISE<br />ACADEMY
+            <img src="src/assets/CRAFTWISEWHITE.png" alt="Students" className="w-64 h-64 p-1 " />   
           </motion.h1>
           
           <motion.p

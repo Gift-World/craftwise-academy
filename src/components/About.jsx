@@ -19,7 +19,7 @@ const About = () => {
         >
           <div>
           <motion.h1 
-              className="text-5xl font-bold text-gray-600 mb-7 px-24 underline"
+              className="text-5xl font-bold text-gray-600 mb-7 font-montserrat  "
               initial={{ opacity: 0.4, x: -40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5 }}
@@ -36,21 +36,19 @@ const About = () => {
               <span className="block text-orange-500">A Revolution in Experiential Learning</span>
             </motion.h1>
             <motion.p 
-              className="text-lg text-gray-600 mb-8"
+              className="text-lg text-gray-600 mb-8 font-montserrat"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results.
-            </motion.p>
+Craftwise Academy is a leading training centre. We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results            </motion.p>
             <motion.p 
               className="text-lg text-gray-600"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.6 }}
             >
-              More than just a training center—CraftWise Academy is where career advancement and organizational transformation come alive. Say goodbye to uninspired workshops and hello to hands-on experiences that mirror real workplace challenges.
-            </motion.p>
+Our expert-led training programs are designed to empower entrepreneurs, professionals, and students with hands-on experience in the latest digital tools and strategies to help them thrive in today’s competitive market. Whether you’re looking to boost your career, grow your business, or enhance your online presence, Craftwise Academy provides affordable, high-quality training tailored to the Kenyan market. Join thousands of learners who have transformed their digital skills with us and take the next step in your professional journey.            </motion.p>
           </div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

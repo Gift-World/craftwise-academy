@@ -3,10 +3,9 @@ import { scrollToSection } from './scrollUtils';
 
 const links = {
   "Quick Links": [
-    { name: "Home", sectionId: "home" },
-   
-    { name: "Contact", sectionId: "contact" },
-
+    { name: "Facebook", url: "https://web.facebook.com/profile.php?id=61571583696663" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/company/craftwise-academyke/?viewAsMember=true" },
+    { name: "Instagram", url: "https://www.instagram.com/craftwiseke?igsh=MWxyZmJsemFzeGRkdg==" }
   ],
   "Programs": [
     { name: "Rising Professionals", sectionId: "rising-professionals" },
@@ -23,15 +22,16 @@ const links = {
   "Contact Info": [
     { name: "info@craftwiseacademy.com", sectionId: "email" },
     { name: "+254 715 208", sectionId: "phone" },
-  
     { name: "Nairobi , Kenya", sectionId: "address-2" }
   ]
 };
 
 const FooterLinks = () => {
   const handleClick = (e, sectionId) => {
-    e.preventDefault();
-    scrollToSection(sectionId);
+    if (sectionId) {
+      e.preventDefault();
+      scrollToSection(sectionId);
+    }
   };
 
   return (
@@ -56,8 +56,10 @@ const FooterLinks = () => {
                 transition={{ delay: (categoryIndex * 0.2) + (itemIndex * 0.1) }}
               >
                 <a
-                  href={`#${item.sectionId}`}
-                  onClick={(e) => handleClick(e, item.sectionId)}
+                  href={item.url ? item.url : `#${item.sectionId}`}
+                  onClick={(e) => item.sectionId && handleClick(e, item.sectionId)}
+                  target={item.url ? "_blank" : "_self"}
+                  rel={item.url ? "noopener noreferrer" : ""}
                   className="text-gray-300 hover:text-orange-400 transition-colors duration-200"
                 >
                   {item.name}
