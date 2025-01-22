@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
-const PartnerCard = ({ logo, name, rating, delay }) => {
+const PartnerCard = ({ logo, name, rating, delay,website }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -26,6 +27,15 @@ const PartnerCard = ({ logo, name, rating, delay }) => {
           </motion.span>
         ))}
       </div>
+      <a
+        href={website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 hover:text-white  space-x-1  relative flex items-center justify-center gap-2 px-5 py-2.5 text-yellow-500 font-bold text-sm   border-white/30 rounded-full shadow-lg overflow-hidden hover:scale-105 hover:border-white/60 transition-transform duration-300 ease-in-out  mx-auto"
+      >
+        <FaExternalLinkAlt size={20} />
+        
+      </a>
     </motion.div>
   );
 };

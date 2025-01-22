@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { scrollToSection } from './scrollUtils';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const links = {
   "Quick Links": [
-    { name: "Facebook", url: "https://web.facebook.com/profile.php?id=61571583696663" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/company/craftwise-academyke/?viewAsMember=true" },
-    { name: "Instagram", url: "https://www.instagram.com/craftwiseke?igsh=MWxyZmJsemFzeGRkdg==" }
+    { name: "Facebook", url: "https://web.facebook.com/profile.php?id=61571583696663", icon: <FaFacebook /> },
+    { name: "LinkedIn", url: "https://www.linkedin.com/company/craftwise-academyke/?viewAsMember=true" , icon: <FaLinkedin /> },
+    { name: "Instagram", url: "https://www.instagram.com/craftwiseke?igsh=MWxyZmJsemFzeGRkdg==" , icon: <FaInstagram /> }
   ],
   "Programs": [
     { name: "Rising Professionals", sectionId: "rising-professionals" },
@@ -60,9 +61,9 @@ const FooterLinks = () => {
                   onClick={(e) => item.sectionId && handleClick(e, item.sectionId)}
                   target={item.url ? "_blank" : "_self"}
                   rel={item.url ? "noopener noreferrer" : ""}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200"
-                >
-                  {item.name}
+                  className={category === "Quick Links" ? " w-10 h-10 rounded-full border border-[#9c6717] hover:bg-[#ffe920] transition duration-500 flex justify-center items-center text-white" : "text-gray-300 hover:text-orange-400 transition-colors duration-200"}
+                  >
+                    {category === "Quick Links" ? item.icon : item.name}
                 </a>
               </motion.li>
             ))}
