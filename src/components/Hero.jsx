@@ -73,7 +73,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            src="https://i.imgur.com/2M0U13b.jpeg"
             alt="Students"
             className="rounded-lg shadow-2xl"
           />
