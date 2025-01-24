@@ -30,19 +30,18 @@ export default function Hero() {
           animate={inView ? { x: 0, opacity: 1 } : {}}
           transition={{ duration: 1.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-nexaBoldItalic leading-tight">
             <span className="text-yellow-300">Transform</span> Your Learning<br />
-            With <span className="text-pink-300">Craftwise Academy</span>
-          </h1>
+            With <span style={{ fontFamily: 'Nexa ' }} className="text-pink-300 ">Craftwise Academy</span>
+            </h1>
 
           <motion.p
             className="text-lg md:text-xl leading-relaxed"
             initial={{ y: 20, opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 1.8 }}
-          >
-EXPERIENCE LEARNING THAT <br/>
-CHANGES EVERYTHING.       </motion.p>
+            style={{ fontFamily: 'Nexa ' }}>
+A REVOLUTION IN  EXPERIENTIAL LEARNING </motion.p>
 
           <Link to="/programs">
             <motion.button

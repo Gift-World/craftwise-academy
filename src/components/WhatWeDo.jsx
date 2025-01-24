@@ -40,7 +40,7 @@ const WhatWeDo = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2  style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-4">
             We Serve ...
           </h2>
          
@@ -48,10 +48,11 @@ const WhatWeDo = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard
-            title="Ambitious Professionals"
+            title=  "Ambitious Professionals"
             description="Looking to elevate their careers through practical, hands-on learning experiences."
             icon={<span className="text-2xl">👥</span>}
             delay={0.2}
+            
           />
           <ServiceCard
             title="Corporate Leaders"
@@ -74,7 +75,7 @@ const WhatWeDo = () => {
           className="text-center mb-12"
         >
          
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto p-7">
+          <p style={{ fontFamily: 'Nexa ' }} className="text-2xl text-gray-600 max-w-2xl mx-auto p-7">
             Whether you are an aspiring manager, a seasoned leader, or an HR professional seeking innovative training solutions, CraftWise Academy is crafted just for you.
           </p>
         </motion.div>
@@ -92,8 +93,8 @@ const WhatWeDo = () => {
               className="rounded-lg shadow-md"
             />
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Current Challenge</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 style={{ fontFamily: 'Nexa ' }} className="text-3xl font-bold text-gray-900 mb-4">Current Challenge</h3>
+              <p style={{ fontFamily: 'Nexa ' }} className="text-gray-600 mb-4 text-2xl">
                 Most corporate training is stale, forgettable, and disconnected from the realities of the job.
               </p>
               <p className="text-gray-600">

@@ -42,14 +42,16 @@ const SolutionSection = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
               SOLUTION
             </motion.h1>
             <motion.p 
-              className="text-lg text-gray-600 mb-8"
+              className="text-2xl text-gray-600 mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
               Breaking away from the traditional, overcrowded training market!
             </motion.p>
@@ -59,6 +61,7 @@ const SolutionSection = () => {
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.5 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
               CraftWise's Unique Approach:
             </motion.h2>

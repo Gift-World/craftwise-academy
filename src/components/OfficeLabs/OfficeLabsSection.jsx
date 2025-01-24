@@ -17,7 +17,7 @@ const OfficeLabsSection = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">The CraftWise Office Labs</h2>
+          <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-8">The CraftWise Office Labs</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             <motion.div
@@ -25,14 +25,14 @@ const OfficeLabsSection = () => {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              <p className="text-lg text-gray-700 mb-6">
+              <p style={{ fontFamily: 'Nexa ' }} className="text-2xl text-gray-700 mb-6">
                 A Leading-edge training environment that simulates a fully operational corporate office, 
                 featuring functional departments such as HR, Marketing, Sales, and Operations.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700"><strong>
                 Equipped with state-of-the-art technology and tools to provide participants with a 
                 hands-on experience reflective of contemporary workplace dynamics.
-              </p>
+             </strong> </p>
             </motion.div>
             
             <motion.div

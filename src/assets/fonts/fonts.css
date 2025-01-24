@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Nexa Black Italic';
+    src: url('./Nexa-Black-Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Bold Italic';
+    src: url('../fonts/Nexa-Bold-Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Bold';
+    src: url('./Nexa-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Book Italic';
+    src: url('./Nexa-Book-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Heavy Italic';
+    src: url('./Nexa-Heavy-Italic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Heavy';
+    src: url('./Nexa-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Italic';
+    src: url('./Nexa-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Light Italic';
+    src: url('./Nexa-Light-Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Light';
+    src: url('./Nexa-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Regular';
+    src: url('./Nexa-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Thin Italic';
+    src: url('./Nexa-Thin-Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa Thin';
+    src: url('./Nexa-Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa XBold Italic';
+    src: url('./Nexa-XBold-Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Nexa XBold';
+    src: url('./Nexa-XBold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  

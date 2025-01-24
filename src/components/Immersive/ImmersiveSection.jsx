@@ -38,10 +38,10 @@ const ImmersiveSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-5xl font-bold text-orange-500 mb-4">CRAFTWISE</h2>
-          <h3 className="text-4xl font-bold text-orange-500 mb-16">EXPERIENCE: IMMERSIVE</h3>
+          <h2 style={{ fontFamily: 'Nexa ' }} className="text-5xl font-bold text-orange-500 mb-4">CRAFTWISE</h2>
+          <h3 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-orange-500 mb-16">EXPERIENCE: IMMERSIVE</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
+          <div style={{ fontFamily: 'Nexa ' }} className="grid grid-cols-1 md:grid-cols-3 gap-16 relative text-2xl">
             {/* Connecting lines */}
             <div className="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-0.5 bg-orange-500" />
             

@@ -23,6 +23,7 @@ const About = () => {
               initial={{ opacity: 0.4, x: -40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
               About us
             </motion.h1>
@@ -33,20 +34,22 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               CraftWise Academy:
-              <span className="block text-orange-500">A Revolution in Experiential Learning</span>
+              <span style={{ fontFamily: 'Nexa ' }}  className="block text-orange-500">Experience Learning That Changes Everything.</span>
             </motion.h1>
             <motion.p 
-              className="text-lg text-gray-600 mb-8 font-montserrat"
+              className="text-2xl text-gray-600 mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
 Craftwise Academy is a leading training centre. We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results            </motion.p>
             <motion.p 
-              className="text-lg text-gray-600"
+              className="text-2xl text-gray-600"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.6 }}
+              style={{ fontFamily: 'Nexa ' }}
             >
 Our expert-led training programs are designed to empower entrepreneurs, professionals, and students with hands-on experience in the latest digital tools and strategies to help them thrive in today’s competitive market. Whether you’re looking to boost your career, grow your business, or enhance your online presence, Craftwise Academy provides affordable, high-quality training tailored to the Kenyan market. Join thousands of learners who have transformed their digital skills with us and take the next step in your professional journey.            </motion.p>
           </div>
