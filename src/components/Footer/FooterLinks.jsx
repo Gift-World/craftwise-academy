@@ -22,7 +22,7 @@ const links = {
   ],
   "Contact Info": [
     { name: "info@craftwiseacademy.com", sectionId: "email" },
-    { name: "+254 715 208", sectionId: "phone" },
+    { name: "+254 715 208 322", sectionId: "phone" },
     { name: "Nairobi , Kenya", sectionId: "address-2" }
   ]
 };

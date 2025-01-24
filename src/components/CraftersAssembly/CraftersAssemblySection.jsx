@@ -77,7 +77,7 @@ const CraftersAssemblySection = () => {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800"
+                src="https://plus.unsplash.com/premium_photo-1707155466125-a7943a37e8f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWZyaWNhbnMlMjBleGVjdXRpdmUlMjBncm91cHxlbnwwfHwwfHx8MA%3D%3D"
                 alt="Professional meeting"
                 className="rounded-lg shadow-2xl"
               />

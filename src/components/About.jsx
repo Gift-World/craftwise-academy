@@ -57,7 +57,7 @@ Our expert-led training programs are designed to empower entrepreneurs, professi
             className="relative"
           >
             <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800"
+              src="https://i.imgur.com/zQOstOI.jpeg"
               alt="Professional training session"
               className="rounded-lg shadow-2xl"
             />

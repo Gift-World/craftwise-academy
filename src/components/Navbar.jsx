@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
         <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-2xl font-bold text-orange-500 focus:outline-none">
-              <img src="src/assets/NavBarLogo.png" alt="logo" className='h-56 w-64 p-7'  />
+              <img src="https://i.imgur.com/XcKmpWW.png" alt="logo" className='h-56 w-64 p-7'  />
             </Link>
           </div>
           

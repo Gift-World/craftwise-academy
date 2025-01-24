@@ -33,7 +33,7 @@ export default function Hero() {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <img src="src/assets/CRAFTWISEWHITE.png" alt="Students" className="w-64 h-64 p-1 " />   
+            <img src="https://i.imgur.com/W0hWztN.png" alt="Students" className="w-64 h-64 p-1 " />   
           </motion.h1>
           <Link to ="/programs"><button className="relative flex items-center justify-center gap-2 px-5 py-2.5 text-white font-bold text-sm bg-yellow-500 border border-white/30 rounded-full shadow-lg overflow-hidden hover:scale-105 hover:border-white/60 transition-transform duration-300 ease-in-out">
   Apply Now

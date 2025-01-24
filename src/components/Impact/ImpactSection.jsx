@@ -60,14 +60,14 @@ const ImpactSection = () => {
             ))}
           </div>
 
-          <motion.img
+          {/* <motion.img
             src="https://images.unsplash.com/photo-1522071901873-411886a10004?auto=format&fit=crop&w=800"
             alt="Professional success"
             className="mt-16 rounded-lg shadow-2xl mx-auto"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.6 }}
-          />
+          /> */}
         </motion.div>
       </div>
     </div>

@@ -46,7 +46,7 @@ const WhyItMattersSection = () => {
             transition={{ delay: 0.6 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1522071901873-411886a10004?auto=format&fit=crop&w=800"
+              src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2h5JTIwaXQlMjBtYXR0ZXJzJTIwYWZyaWNhbiUyMHBob3Rvc3xlbnwwfHwwfHx8MA%3D%3D"
               alt="Career growth"
               className="rounded-lg shadow-2xl"
             />

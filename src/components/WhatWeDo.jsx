@@ -87,7 +87,7 @@ const WhatWeDo = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800"
+              src="https://i.imgur.com/ps8PhDG.jpeg"
               alt="Training session"
               className="rounded-lg shadow-md"
             />
