@@ -18,18 +18,18 @@ const Navbar = () => {
           </div>
           
           <div className="flex space-x-8">
-          <Link to="/" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+          <Link to="/" style={{ fontFamily: 'Nexa ' }} className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none text-[19px]">
               Home
             </Link>
             
             
-            <Link to="/benefits" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/benefits" style={{ fontFamily: 'Nexa ' }} className=" text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Benefits
             </Link>
-            <Link to="/programs" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/programs" style={{ fontFamily: 'Nexa ' }} className=" text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Programs
             </Link>
-            <Link to="/contact" className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/contact" style={{ fontFamily: 'Nexa ' }} className="text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Contact us
             </Link>
           </div>
