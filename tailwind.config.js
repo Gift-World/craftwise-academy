@@ -14,21 +14,8 @@ export default {
         textSecondary: "#8892b0",
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        nexaBlackItalic: ['Nexa Black Italic', 'sans-serif'],
-        nexaBoldItalic: ['Nexa Bold Italic', 'sans-serif'],
-        nexaBold: ['Nexa Bold', 'sans-serif'],
-        nexaBookItalic: ['Nexa Book Italic', 'sans-serif'],
-        nexaHeavyItalic: ['Nexa Heavy Italic', 'sans-serif'],
-        nexaHeavy: ['Nexa Heavy', 'sans-serif'],
-        nexaItalic: ['Nexa Italic', 'sans-serif'],
-        nexaLightItalic: ['Nexa Light Italic', 'sans-serif'],
-        nexaLight: ['Nexa Light', 'sans-serif'],
-        nexaRegular: ['Nexa Regular', 'sans-serif'],
-        nexaThinItalic: ['Nexa Thin Italic', 'sans-serif'],
-        nexaThin: ['Nexa Thin', 'sans-serif'],
-        nexaXBoldItalic: ['Nexa XBold Italic', 'sans-serif'],
-        nexaXBold: ['Nexa XBold', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'], // Default font
+        montserrat: ['Montserrat', 'sans-serif'], // Custom entry
       },
       animation: {
         shine: 'shine 1.5s ease-out infinite',

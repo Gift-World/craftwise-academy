@@ -8,7 +8,7 @@ const About = () => {
   });
 
   return (
-    <div id='about' className="min-h-screen pt-16 bg-gradient-to-b from-white to-orange-50">
+    <div id='about' className="min-h-screen bg-gradient-to-b from-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           ref={ref}
@@ -19,11 +19,11 @@ const About = () => {
         >
           <div>
           <motion.h1 
-              className="text-5xl font-bold text-gray-600 mb-7 font-montserrat  "
+              className="text-4xl font-montserrat font-bold text-gray-600 mb-7  "
               initial={{ opacity: 0.4, x: -40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5 }}
-              style={{ fontFamily: 'Nexa ' }}
+              
             >
               About us
             </motion.h1>
@@ -34,16 +34,16 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               CraftWise Academy:
-              <span style={{ fontFamily: 'Nexa ' }}  className="block text-orange-500">Experience Learning That Changes Everything.</span>
+              <span className="block text-orange-500">Experience Learning That Changes Everything.</span>
             </motion.h1>
             <motion.p 
-              className="text-2xl text-gray-600 mb-8"
+              className=" font-montserrat font-extralight text-2xl text-gray-600 mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
-              style={{ fontFamily: 'Nexa ' }}
+              
             >
-Craftwise Academy is a leading training centre. We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results            </motion.p>
+We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results    </motion.p>
             <motion.p 
               className="text-2xl text-gray-600"
               initial={{ opacity: 0 }}
@@ -51,7 +51,7 @@ Craftwise Academy is a leading training centre. We craft high-performing profess
               transition={{ delay: 0.6 }}
               style={{ fontFamily: 'Nexa ' }}
             >
-Our expert-led training programs are designed to empower entrepreneurs, professionals, and students with hands-on experience in the latest digital tools and strategies to help them thrive in today’s competitive market. Whether you’re looking to boost your career, grow your business, or enhance your online presence, Craftwise Academy provides affordable, high-quality training tailored to the Kenyan market. Join thousands of learners who have transformed their digital skills with us and take the next step in your professional journey.            </motion.p>
+More than just a training center—CraftWise Academy is where career advancement and organizational transformation come alive. Say goodbye to uninspired workshops and hello to hands-on experiences that mirror real workplace challenges.  </motion.p>
           </div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
