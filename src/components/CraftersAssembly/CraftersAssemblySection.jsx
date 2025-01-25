@@ -43,11 +43,12 @@ const CraftersAssemblySection = () => {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.2 }}
+            style={{ fontFamily: 'Nexa ' }}
           >
             THE CRAFTERS ASSEMBLY
           </motion.h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div style={{ fontFamily: 'Nexa ' }} className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-2xl">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}

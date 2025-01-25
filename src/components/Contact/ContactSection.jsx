@@ -20,8 +20,8 @@ const ContactSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-orange-500 mb-4">Contact Us</h2>
-          <p className="text-xl text-orange-200 max-w-2xl mx-auto">
+          <h2 style={{ fontFamily: 'Nexa ' }} className="text-5xl font-bold text-orange-500 mb-4">Contact Us</h2>
+          <p style={{ fontFamily: 'Nexa ' }} className="text-xl text-orange-200 max-w-2xl mx-auto">
             Ready to transform your career? Get in touch with us today.
           </p>
         </motion.div>

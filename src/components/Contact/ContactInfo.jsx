@@ -11,8 +11,8 @@ const ContactItem = ({ icon, title, content, delay }) => (
   >
     <div className="text-2xl bg-orange-500/20 p-3 rounded-full">{icon}</div>
     <div>
-      <h3 className="text-white font-semibold mb-1">{title}</h3>
-      <p className="text-orange-200">{content}</p>
+      <h3  className="text-white font-semibold mb-1">{title}</h3>
+      <p  className="text-orange-200">{content}</p>
     </div>
   </motion.div>
 );

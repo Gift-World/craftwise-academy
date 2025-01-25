@@ -43,6 +43,7 @@ const PartnersSection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
+            style={{ fontFamily: 'Nexa ' }}
           >
             PARTNERS
           </motion.h2>

@@ -46,7 +46,7 @@ const FooterLinks = () => {
           transition={{ delay: categoryIndex * 0.2 }}
           className="flex flex-col items-center"
         >
-          <h3 className="text-lg font-semibold text-orange-500 mb-4">{category}</h3>
+          <h3 style={{ fontFamily: 'Nexa ' }} className="text-2xl font-semibold text-orange-500 mb-4">{category}</h3>
           <ul className="space-y-2">
             {items.map((item, itemIndex) => (
               <motion.li
@@ -62,6 +62,7 @@ const FooterLinks = () => {
                   target={item.url ? "_blank" : "_self"}
                   rel={item.url ? "noopener noreferrer" : ""}
                   className={category === "Quick Links" ? " w-10 h-10 rounded-full border border-[#9c6717] hover:bg-[#ffe920] transition duration-500 flex justify-center items-center text-white" : "text-gray-300 hover:text-orange-400 transition-colors duration-200"}
+                  style={{ fontFamily: 'Nexa ' }}
                   >
                     {category === "Quick Links" ? item.icon : item.name}
                 </a>

@@ -41,6 +41,7 @@ const ImpactSection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
+            style={{ fontFamily: 'Nexa ' }}
           >
             THE IMPACT
           </motion.h2>
@@ -50,24 +51,18 @@ const ImpactSection = () => {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4 }}
+            style={{ fontFamily: 'Nexa ' }}
           >
             CraftWise Academy doesn't just teach; we create leaders, innovators, and changemakers.
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div style={{ fontFamily: 'Nexa ' }} className=" text-[17px] grid grid-cols-1 md:grid-cols-3 gap-8">
             {impacts.map((impact, index) => (
               <ImpactCard key={index} {...impact} index={index} />
             ))}
           </div>
 
-          {/* <motion.img
-            src="https://images.unsplash.com/photo-1522071901873-411886a10004?auto=format&fit=crop&w=800"
-            alt="Professional success"
-            className="mt-16 rounded-lg shadow-2xl mx-auto"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.6 }}
-          /> */}
+         
         </motion.div>
       </div>
     </div>
