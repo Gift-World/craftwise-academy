@@ -18,18 +18,18 @@ const Navbar = () => {
           </div>
           
           <div className="flex space-x-8">
-          <Link to="/" style={{ fontFamily: 'Nexa ' }} className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none text-[19px]">
+          <Link to="/"  className=" font-montserrat inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none text-[19px]">
               Home
             </Link>
             
             
-            <Link to="/benefits" style={{ fontFamily: 'Nexa ' }} className=" text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/benefits"  className="font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Benefits
             </Link>
-            <Link to="/programs" style={{ fontFamily: 'Nexa ' }} className=" text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/programs"  className=" font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Programs
             </Link>
-            <Link to="/contact" style={{ fontFamily: 'Nexa ' }} className="text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/contact"  className=" font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Contact us
             </Link>
           </div>
