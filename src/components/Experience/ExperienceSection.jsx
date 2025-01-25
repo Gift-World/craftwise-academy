@@ -30,7 +30,7 @@ const ExperienceSection = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-16">
+    <div className=" bg-gradient-to-b from-orange-50 to-white py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -38,10 +38,10 @@ const ExperienceSection = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-4">FLEXIBLE TRAINING</h2>
-          <h3 style={{ fontFamily: 'Nexa ' }} className="text-2xl text-orange-500 mb-12">FORMATS</h3>
+          <h2 className=" font-montserrat text-4xl font-bold text-gray-900 mb-4">FLEXIBLE TRAINING</h2>
+          <h3 className=" font-montserrat text-2xl font-semibold text-orange-500 mb-12">FORMATS</h3>
           
-          <div style={{ fontFamily: 'Nexa ' }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-2xl">
+          <div  className="font-montserrat grid grid-cols-1 md:grid-cols-3 gap-8 text-[17px]">
             {experiences.map((experience, index) => (
               <ExperienceCard key={index} {...experience} />
             ))}

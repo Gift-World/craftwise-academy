@@ -27,7 +27,7 @@ const ImpactSection = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 py-16">
+    <div className="mb-7 bg-gradient-to-b from-white to-orange-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -37,21 +37,21 @@ const ImpactSection = () => {
           className="text-center"
         >
           <motion.h2 
-            className="text-4xl font-bold text-gray-900 mb-4"
+            className="font-montserrat text-4xl font-bold text-gray-900 mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
-            style={{ fontFamily: 'Nexa ' }}
+            
           >
             THE IMPACT
           </motion.h2>
           
           <motion.p
-            className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto"
+            className="font-montserrat text-[19px] font-medium text-gray-600 mb-12 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4 }}
-            style={{ fontFamily: 'Nexa ' }}
+           
           >
             CraftWise Academy doesn't just teach; we create leaders, innovators, and changemakers.
           </motion.p>

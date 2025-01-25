@@ -39,11 +39,11 @@ const CraftersAssemblySection = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl font-bold text-gray-900 mb-8"
+            className=" font-montserrat text-4xl font-bold text-gray-900 mb-8"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.2 }}
-            style={{ fontFamily: 'Nexa ' }}
+      
           >
             THE CRAFTERS ASSEMBLY
           </motion.h2>
@@ -62,7 +62,7 @@ const CraftersAssemblySection = () => {
               </div>
               
               <motion.p
-                className="text-lg text-gray-700 italic mt-8"
+                className="text-[20px] text-gray-700 italic mt-8"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.8 }}

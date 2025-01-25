@@ -19,7 +19,7 @@ const WhyItMattersSection = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-8">Why it matters:</h2>
+            <h2 className="font-montserrat text-4xl font-bold text-gray-900 mb-8">Why it matters:</h2>
             
             <motion.div
               className="bg-orange-500 text-white p-8 rounded-lg shadow-xl"
@@ -27,12 +27,12 @@ const WhyItMattersSection = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 }}
             >
-              <h3 style={{ fontFamily: 'Nexa ' }} className="text-2xl font-bold mb-4">Career Fulfillment:</h3>
-              <p style={{ fontFamily: 'Nexa ' }} className="text-lg mb-4">
+              <h3 className=" font-montserrat text-2xl font-bold mb-4">Career Fulfillment:</h3>
+              <p  className="font-montserrat text-lg mb-4">
                 It's not just about a paycheck. It's about making an impact, feeling
                 engaged, and growing continuously.
               </p>
-              <p style={{ fontFamily: 'Nexa ' }} className="text-lg">
+              <p className=" font-montserrat text-lg">
                 CraftWise Academy ensures you're not just surviving but thriving in your
                 career.
               </p>

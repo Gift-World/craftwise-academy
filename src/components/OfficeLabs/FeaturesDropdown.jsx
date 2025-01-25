@@ -24,15 +24,14 @@ const FeaturesDropdown = () => {
 
   return (
     <div className="space-y-4">
-      <h3 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-6">Features:</h3>
+      <h3 className=" font-montserrat text-4xl font-bold text-gray-900 mb-6">Features:</h3>
       {features.map((feature, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.2 }}
-          style={{ fontFamily: 'Nexa ' }}
-          className="bg-white rounded-lg shadow-md overflow-hidden text-[18px]"
+          className="bg-white font-montserrat rounded-lg shadow-md overflow-hidden text-[15px]"
         >
           <button
             onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
