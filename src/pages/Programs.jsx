@@ -135,13 +135,13 @@ const Programs = () => {
           className="space-y-12"
         >
           <div className="text-center">
-            <h1 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-4">Our Programs</h1>
-            <p style={{ fontFamily: 'Nexa ' }} className="text-2xl text-gray-600 max-w-3xl mx-auto">
+            <h1  className="font-montserrat text-4xl font-bold text-gray-900 mb-4">Our Programs</h1>
+            <p className=" font-montserrat text-[18px] text-gray-600 max-w-3xl mx-auto">
               Comprehensive learning journeys designed to transform professionals at every career stage.
             </p>
           </div>
 
-          <div style={{ fontFamily: 'Nexa ' }} className=" text-[20px] grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="font-montserrat text-[20px] grid grid-cols-1 md:grid-cols-2 gap-8">
             {programs.map((program, index) => (
               <ProgramCard
                 key={index}

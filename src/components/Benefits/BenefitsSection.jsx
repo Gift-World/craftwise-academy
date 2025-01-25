@@ -53,8 +53,8 @@ const BenefitsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-8">BENEFITS</h2>
-          <div style={{ fontFamily: 'Nexa ' }} className=" text-[17px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2  className=" font-montserrat text-4xl font-bold text-gray-900 mb-8">BENEFITS</h2>
+          <div className=" font-montserrat text-[17px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
               <BenefitCard key={index} {...benefit} />
             ))}
