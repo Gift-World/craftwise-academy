@@ -18,18 +18,18 @@ const Navbar = () => {
           </div>
           
           <div className="flex space-x-8">
-          <Link to="/"  className=" font-montserrat inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none text-[19px]">
+          <Link to="/"  className=" font-montserrat font-medium text-[15px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Home
             </Link>
             
             
-            <Link to="/benefits"  className="font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/benefits"  className="font-montserrat font-medium text-[15px]  inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Benefits
             </Link>
-            <Link to="/programs"  className=" font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/programs"  className=" font-montserrat font-medium text-[15px]  inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Programs
             </Link>
-            <Link to="/contact"  className=" font-montserrat text-[19px] inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
+            <Link to="/contact"  className=" font-montserrat font-medium text-[15px]  inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
               Contact us
             </Link>
           </div>
