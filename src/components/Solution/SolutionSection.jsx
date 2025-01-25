@@ -27,7 +27,7 @@ const SolutionSection = () => {
   });
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-white to-orange-50">
+    <div className="min-h-screen pt-0 bg-gradient-to-b from-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           ref={ref}
@@ -38,33 +38,24 @@ const SolutionSection = () => {
         >
           <div>
             <motion.h1 
-              className="text-4xl font-bold text-gray-900 mb-6"
+              className="text-4xl font-montserrat font-bold text-gray-900 mb-6"
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              style={{ fontFamily: 'Nexa ' }}
+            
             >
-              SOLUTION
+               CraftWise's Unique Approach:
             </motion.h1>
             <motion.p 
-              className="text-2xl text-gray-600 mb-8"
+              className=" font-montserrat text-[19px] text-gray-800 font-medium mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
-              style={{ fontFamily: 'Nexa ' }}
+              
             >
-              Breaking away from the traditional, overcrowded training market!
+              Breaking away from the traditional, overcrowded training market!!!
             </motion.p>
             
-            <motion.h2
-              className="text-2xl font-bold text-gray-800 mb-6"
-              initial={{ opacity: 0 }}
-              animate={inView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.5 }}
-              style={{ fontFamily: 'Nexa ' }}
-            >
-              CraftWise's Unique Approach:
-            </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {approaches.map((approach, index) => (
@@ -87,7 +78,20 @@ const SolutionSection = () => {
             <div className="absolute -top-4 -right-4 w-24 h-24 text-4xl">💡</div>
           </motion.div>
         </motion.div>
+        
       </div>
+      <motion.div
+          ref={ref}
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-4"
+        >
+         
+          <p  className=" font-montserrat text-[17px] text-gray-800 font-medium  mx-auto p-5">
+          We create an entirely new category of learning—experiential, engaging, and transformational.
+          </p>
+        </motion.div>
     </div>
   );
 };

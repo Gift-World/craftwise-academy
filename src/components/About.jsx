@@ -28,16 +28,16 @@ const About = () => {
               About us
             </motion.h1>
             <motion.h1 
-              className="text-4xl font-semibold text-gray-900 mb-6"
+              className=" font-montserrat text-3xl font-medium text-gray-900 mb-6"
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
               CraftWise Academy:
-              <span className="block text-orange-500">Experience Learning That Changes Everything.</span>
+              <span className="block font-montserrat font-bold text-orange-500">A Revolution in Experiential Learning.</span>
             </motion.h1>
             <motion.p 
-              className=" font-montserrat font-extralight text-2xl text-gray-600 mb-8"
+              className=" font-montserrat font-medium text-[18px] text-black mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
@@ -45,11 +45,11 @@ const About = () => {
             >
 We craft high-performing professionals to excel through hands-on learning, practical tools, and expert guidance that build confidence, spark innovation, and deliver real results    </motion.p>
             <motion.p 
-              className="text-2xl text-gray-600"
+              className="font-montserrat font-medium text-[18px] text-black mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.6 }}
-              style={{ fontFamily: 'Nexa ' }}
+    
             >
 More than just a training center—CraftWise Academy is where career advancement and organizational transformation come alive. Say goodbye to uninspired workshops and hello to hands-on experiences that mirror real workplace challenges.  </motion.p>
           </div>

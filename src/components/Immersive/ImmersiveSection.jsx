@@ -6,13 +6,13 @@ const experiences = [
   {
     title: "TRANSFORMATIVE LEARNING",
     description: "Active participation, problem-solving, and hands-on practice",
-    icon: "🔄",
+    icon: "🔄 ",
     delay: 0.2
   },
   {
     title: "EMPATHETIC LEADERSHIP",
     description: "Role-reversal challenges to build understanding and trust",
-    icon: "❤️",
+    icon: "🥇",
     delay: 0.4
   },
   {
@@ -38,10 +38,10 @@ const ImmersiveSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 style={{ fontFamily: 'Nexa ' }} className="text-5xl font-bold text-orange-500 mb-4">CRAFTWISE</h2>
-          <h3 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-orange-500 mb-16">EXPERIENCE: IMMERSIVE</h3>
+          <h2  className=" font-montserrat text-5xl font-bold text-orange-500 mb-4">CRAFTWISE</h2>
+          <h3  className=" font-montserrat text-4xl font-bold text-orange-500 mb-16">EXPERIENCE: IMMERSIVE</h3>
           
-          <div style={{ fontFamily: 'Nexa ' }} className="grid grid-cols-1 md:grid-cols-3 gap-16 relative text-2xl">
+          <div className=" font-montserrat grid grid-cols-1 md:grid-cols-3 gap-16 relative text-2xl">
             {/* Connecting lines */}
             <div className="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-0.5 bg-orange-500" />
             

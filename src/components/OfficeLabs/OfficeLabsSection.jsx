@@ -9,7 +9,7 @@ const OfficeLabsSection = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-16">
+    <div className=" mb-6 bg-gradient-to-b from-orange-50 to-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -17,7 +17,7 @@ const OfficeLabsSection = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-8">The CraftWise Office Labs</h2>
+          <h2 className="text-4xl font-montserrat font-semibold text-gray-900 mb-2">The CraftWise Office Labs</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             <motion.div
@@ -25,11 +25,11 @@ const OfficeLabsSection = () => {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
-              <p style={{ fontFamily: 'Nexa ' }} className="text-2xl text-gray-700 mb-6">
+              <p className=" font-montserrat font-medium text-[18px] text-black mt-8">
                 A Leading-edge training environment that simulates a fully operational corporate office, 
                 featuring functional departments such as HR, Marketing, Sales, and Operations.
               </p>
-              <p className="text-lg text-gray-700"><strong>
+              <p className=" mt-16 font-montserrat text-lg text-gray-700"><strong>
                 Equipped with state-of-the-art technology and tools to provide participants with a 
                 hands-on experience reflective of contemporary workplace dynamics.
              </strong> </p>
@@ -44,7 +44,7 @@ const OfficeLabsSection = () => {
               <img
                 src="https://i.imgur.com/hArS09X.jpeg"
                 alt="Office environment"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl mt-0"
               />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 text-4xl">🧪</div>
             </motion.div>

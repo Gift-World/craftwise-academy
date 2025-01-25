@@ -31,16 +31,16 @@ const WhatWeDo = () => {
   });
 
   return (
-    <div id='what-we-do' className="min-h-screen pt-16 bg-gradient-to-b from-orange-50 to-white">
+    <div id='what-we-do' className=" bg-gradient-to-b from-orange-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.4 }}
+          className="text-center mb-4"
         >
-          <h2  style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-gray-900 mb-4">
+          <h2  className="text-4xl font-montserrat font-bold text-gray-900 mb-4">
             We Serve ...
           </h2>
          
@@ -72,36 +72,12 @@ const WhatWeDo = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-4"
         >
          
-          <p style={{ fontFamily: 'Nexa ' }} className="text-2xl text-gray-600 max-w-2xl mx-auto p-7">
+          <p  className=" font-montserrat text-[17px] text-gray-800 font-medium  mx-auto p-5">
             Whether you are an aspiring manager, a seasoned leader, or an HR professional seeking innovative training solutions, CraftWise Academy is crafted just for you.
           </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8 }}
-          className="mt-16 bg-white p-8 rounded-lg shadow-lg"
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <img
-              src="https://i.imgur.com/ps8PhDG.jpeg"
-              alt="Training session"
-              className="rounded-lg shadow-md"
-            />
-            <div>
-              <h3 style={{ fontFamily: 'Nexa ' }} className="text-3xl font-bold text-gray-900 mb-4">Current Challenge</h3>
-              <p style={{ fontFamily: 'Nexa ' }} className="text-gray-600 mb-4 text-2xl">
-                Most corporate training is stale, forgettable, and disconnected from the realities of the job.
-              </p>
-              <p className="text-gray-600">
-                Employees leave uninspired, and companies see minimal impact on engagement, performance, and career fulfillment.
-              </p>
-            </div>
-          </div>
         </motion.div>
       </div>
     </div>

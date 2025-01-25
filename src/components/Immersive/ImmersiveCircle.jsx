@@ -21,7 +21,7 @@ const ImmersiveCircle = ({ title, description, icon, delay }) => {
         
         {/* Main circle */}
         <div className="relative bg-[#4A1D1F] rounded-full p-8 aspect-square flex flex-col items-center justify-center text-center border-2 border-orange-500">
-          <div className="text-white mb-2">{icon}</div>
+          <div className="text-white mb-2 text-6xl">{icon}</div>
           <h3 className="text-white font-bold mb-2">{title}</h3>
           <p className="text-white text-sm">{description}</p>
         </div>
