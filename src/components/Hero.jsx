@@ -33,7 +33,7 @@ export default function Hero() {
        
       </div>
       
-        <h1 className=' p-32 text-white  mt-24 font-montserrat font-semibold text-4xl'><strong>CRAFTWISE <br></br>ACADEMY</strong></h1>
+        <h1 className=' p-32 text-white  mt-24 font-montserrat font-semibold text-5xl'><strong>CRAFTWISE <br></br>ACADEMY</strong></h1>
        
 
         <p className=' p-9 font-montserrat text-white text-3xl font-medium' >Experience Learning, <br></br> That Changes Everything.</p>

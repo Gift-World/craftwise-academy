@@ -15,7 +15,7 @@ const OfficeLabsSection = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-4xl font-montserrat font-semibold text-gray-900 mb-2">The CraftWise Office Labs</h2>
           
