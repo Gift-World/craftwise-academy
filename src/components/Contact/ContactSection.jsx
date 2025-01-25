@@ -78,8 +78,8 @@ const ContactSection = () => {
               className="text-center mb-12"
               variants={itemVariants}
             >
-              <h2 className="text-4xl font-bold text-white mb-4">Contact Us</h2>
-              <p className="text-white/80 text-lg">Get in touch with the CraftWise Academy team</p>
+              <h2 style={{ fontFamily: 'Nexa ' }} className="text-4xl font-bold text-white mb-4">Contact Us</h2>
+              <p style={{ fontFamily: 'Nexa ' }} className="text-white/80 text-2xl">Get in touch with the CraftWise Academy team</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -141,7 +141,8 @@ const ContactSection = () => {
                     type="submit"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full bg-secondary text-white py-4 px-6 rounded-lg font-semibold shadow-lg hover:bg-secondary/90 hover:shadow-xl transition-all duration-300"
+                    style={{ fontFamily: 'Nexa ' }}
+                    className="w-full bg-secondary text-white py-4 px-6 rounded-lg font-semibold shadow-lg hover:bg-secondary/90 hover:shadow-xl text-2xl transition-all duration-300"
                   >
                     Send Message
                   </motion.button>
@@ -153,7 +154,7 @@ const ContactSection = () => {
                 variants={itemVariants}
               >
                 <div className="space-y-8">
-                  <h3 className="text-2xl font-semibold text-white mb-8">Contact Information</h3>
+                  <h3 style={{ fontFamily: 'Nexa ' }} className="text-2xl font-semibold text-white mb-8">Contact Information</h3>
 
                   {[
                     { icon: FaMapMarkerAlt, title: "Address", content: "Nairobi, Kenya" },
@@ -170,7 +171,7 @@ const ContactSection = () => {
                         <item.icon className="text-white text-xl" />
                       </div>
                       <div>
-                        <h4 className="font-medium text-white text-lg mb-1">{item.title}</h4>
+                        <h4  style={{ fontFamily: 'Nexa ' }} className="font-medium text-white text-lg mb-1">{item.title}</h4>
                         <p className="text-white/70 group-hover:text-white transition-colors duration-300">
                           {item.content}
                         </p>
