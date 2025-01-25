@@ -1,143 +1,191 @@
-import { useState } from 'react';
-import Footer from '../Footer/Footer';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import Footer from '../Footer/Footer'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 const ContactSection = () => {
-  // State to store form data
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
-  });
+  })
 
-  // State to manage form errors (e.g., missing fields)
-  const [formError, setFormError] = useState('');
+  const [formError, setFormError] = useState('')
+  const { ref: sectionRef, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true
+  })
 
-  // Handle form input changes
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
       [name]: value
-    }));
-  };
+    }))
+  }
 
-  // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    // Check if all fields are filled
     if (!formData.name || !formData.email || !formData.message) {
-      setFormError('Please fill out all fields.');
-      return;
+      setFormError('Please fill out all fields.')
+      return
     }
 
-    // Construct the mailto link
-    const mailtoLink = `mailto:info@craftwiseacademy.com?subject=Message from ${formData.name}&body=Name: ${formData.name}%0AEmail: ${formData.email}%0AMessage:%0A${formData.message}`;
+    const mailtoLink = `mailto:info@craftwiseacademy.com?subject=Message from ${formData.name}&body=Name: ${formData.name}%0AEmail: ${formData.email}%0AMessage:%0A${formData.message}`
+    window.location.href = mailtoLink
+  }
 
-    // Open the email client with the mailto link
-    window.location.href = mailtoLink;
-  };
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.2
+      }
+    }
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5 }
+    }
+  }
 
   return (
     <div>
-      <div className="min-h-screen bg-gradient-to-b from-[#2A1011] to-orange-900 py-16">
-        <section id="contact" className="bg-gradient-to-br from-secondary via-secondary to-primary overflow-hidden py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white ">Contact Us</h2>
-              <p className="text-white">Get in touch with the CraftWise Academy team</p>
-            </div>
+      <div className="min-h-screen bg-orange-900 py-16">
+        <motion.section
+          ref={sectionRef}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={containerVariants}
+          id="contact"
+          className="relative overflow-hidden py-16"
+        >
+          <motion.div
+            className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2 animate-gradient"
+          />
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div
+              className="text-center mb-12"
+              variants={itemVariants}
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">Contact Us</h2>
+              <p className="text-white/80 text-lg">Get in touch with the CraftWise Academy team</p>
+            </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-orange-900 p-6 rounded-lg shadow-md">
-                <form className="space-y-4" onSubmit={handleSubmit}>
+              <motion.div
+                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02]"
+                variants={itemVariants}
+              >
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   {formError && (
-                    <div className="text-red-500 text-center mb-4">
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      className="bg-red-500/10 border border-red-500/20 text-red-200 text-center p-3 rounded-lg"
+                    >
                       <p>{formError}</p>
-                    </div>
+                    </motion.div>
                   )}
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-black">Name</label>
+                  
+                  <motion.div variants={itemVariants}>
+                    <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-2">Name</label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-secondary/50 focus:border-transparent transition-all duration-300"
                       placeholder="Your Name"
                     />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-black">Email</label>
+                  </motion.div>
+
+                  <motion.div variants={itemVariants}>
+                    <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-2">Email</label>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-secondary/50 focus:border-transparent transition-all duration-300"
                       placeholder="your@email.com"
                     />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-black">Message</label>
+                  </motion.div>
+
+                  <motion.div variants={itemVariants}>
+                    <label htmlFor="message" className="block text-sm font-medium text-white/90 mb-2">Message</label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       rows="4"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-secondary/50 focus:border-transparent transition-all duration-300"
                       placeholder="Your message..."
-                    ></textarea>
-                  </div>
-                  <button
+                    />
+                  </motion.div>
+
+                  <motion.button
                     type="submit"
-                    className="w-full bg-primary text-red py-2 px-4 rounded-md hover:bg-secondary transition-colors"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-full bg-secondary text-white py-4 px-6 rounded-lg font-semibold shadow-lg hover:bg-secondary/90 hover:shadow-xl transition-all duration-300"
                   >
                     Send Message
-                  </button>
+                  </motion.button>
                 </form>
-              </div>
+              </motion.div>
 
-              <div className="bg-orange-900 p-6 rounded-lg shadow-md">
-                <div className="space-y-6">
-                  <h3 className="text-xl font-semibold text-primary mb-4">Contact Information</h3>
+              <motion.div
+                className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-xl"
+                variants={itemVariants}
+              >
+                <div className="space-y-8">
+                  <h3 className="text-2xl font-semibold text-white mb-8">Contact Information</h3>
 
-                  <div className="flex items-start space-x-3">
-                    <FaMapMarkerAlt className="text-primary text-xl mt-1" />
-                    <div>
-                      <h4 className="font-medium">Address</h4>
-                      <p className="text-white">Nairobi, Kenya</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <FaPhone className="text-primary text-xl mt-1" />
-                    <div>
-                      <h4 className="font-medium">Phone</h4>
-                      <p className="text-white">+254 715 208 322</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <FaEnvelope className="text-primary text-xl mt-1" />
-                    <div>
-                      <h4 className="font-medium">Email</h4>
-                      <p className="text-white">INFO@CRAFTWISEACADEMY.COM</p>
-                    </div>
-                  </div>
+                  {[
+                    { icon: FaMapMarkerAlt, title: "Address", content: "Nairobi, Kenya" },
+                    { icon: FaPhone, title: "Phone", content: "+254 715 208 322" },
+                    { icon: FaEnvelope, title: "Email", content: "INFO@CRAFTWISEACADEMY.COM" }
+                  ].map((item, index) => (
+                    <motion.div
+                      key={index}
+                      className="flex items-start space-x-4 group"
+                      whileHover={{ x: 10 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <div className="p-4 bg-secondary/20 rounded-xl group-hover:bg-secondary/30 transition-colors duration-300">
+                        <item.icon className="text-white text-xl" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-white text-lg mb-1">{item.title}</h4>
+                        <p className="text-white/70 group-hover:text-white transition-colors duration-300">
+                          {item.content}
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default ContactSection
