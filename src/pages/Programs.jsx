@@ -1,159 +1,133 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import ProgramCard from '../components/Programs/ProgramCard';
-import Footer from '../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const programs = [
   {
-    title: "RISING PROFESSIONALS PROGRAMME",
-    description: "Empowering Early Career Success",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800",
-    features: [
-      {
-        icon: "💼",
-        title: "Corporate Readiness",
-        description: "Master workplace etiquette and build a strong first impression."
-      },
-      {
-        icon: "📋",
-        title: "Task Management",
-        description: "Learn prioritization tools and streamline workflows with tools like Trello and Asana."
-      },
-      {
-        icon: "💬",
-        title: "Professional Communication",
-        description: "Develop email etiquette, impactful pitches, and effective meeting strategies."
-      }
-    ],
-    tools: [
-      "Task Management Toolkit",
-      "Corporate Culture Playbook",
-      "AI-Powered Feedback Tools"
-    ],
-    outcomes: "Confident, efficient, and well-connected professionals ready to thrive in their first 100 days."
-  },
-  {
     title: "NEW MANAGERS PROGRAMME",
-    description: "Transitioning from Individual Contributor to Leader",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800",
-    features: [
-      {
-        icon: "👥",
-        title: "Leadership Foundations",
-        description: "Navigate the peer-to-leader shift with authority and empathy."
-      },
-      {
-        icon: "🤝",
-        title: "Team Dynamics",
-        description: "Manage performance, resolve conflicts, and foster collaboration."
-      },
-      {
-        icon: "🎯",
-        title: "Strategic Thinking",
-        description: "Use decision-making frameworks to lead with clarity and impact."
-      }
-    ],
-    tools: [
-      "Leadership Toolkits",
-      "Behavioral Assessments",
-      "Simulated Scenarios"
-    ],
-    outcomes: "Confident, empathetic managers capable of inspiring and driving team success."
+    subtitle: "Transitioning from Individual Contributor to Leader",
+    description: "A comprehensive program designed for new managers, focusing on essential leadership skills and team management fundamentals.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    path: "/managers"
   },
   {
     title: "EMERGING LEADERS PROGRAMME",
-    description: "Preparing for Senior Leadership Roles",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800",
-    features: [
-      {
-        icon: "💫",
-        title: "Strategic Impact",
-        description: "Drive initiatives aligned with organizational goals and manage multi-stakeholder environments."
-      },
-      {
-        icon: "👥",
-        title: "Advanced People Management",
-        description: "Coach and mentor teams while fostering innovation and psychological safety."
-      },
-      {
-        icon: "🔄",
-        title: "Change Management",
-        description: "Lead through organizational transitions and adapt leadership styles."
-      }
-    ],
-    tools: [
-      "Strategic Planning Frameworks",
-      "Performance Dashboards",
-      "Leadership Mastery Portal"
-    ],
-    outcomes: "Leaders equipped to handle complex challenges and drive organizational transformation."
+    subtitle: "Preparing for Senior Leadership Roles",
+    description: "An advanced program for emerging leaders ready to take on greater organizational responsibilities.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    path: "/emerging"
   },
   {
     title: "LEGACY LEADERS PROGRAMME",
-    description: "Shaping Organizational Transformation",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800",
-    features: [
-      {
-        icon: "🎯",
-        title: "Visionary Leadership",
-        description: "Craft and communicate a compelling vision for long-term growth."
-      },
-      {
-        icon: "📊",
-        title: "Executive Decision-Making",
-        description: "Navigate complexity with risk management and data-driven strategies."
-      },
-      {
-        icon: "🌟",
-        title: "Culture Building",
-        description: "Embed values of inclusion, diversity, and high performance."
-      }
-    ],
-    tools: [
-      "Executive Leadership Toolkits",
-      "360-Degree Feedback Tools",
-      "Leadership Shadowing Opportunities"
-    ],
-    outcomes: "Transformational leaders who create lasting organizational impact and cultivate future leadership."
+    subtitle: "Shaping Organizational Transformation",
+    description: "An executive program focused on building lasting organizational impact and cultural transformation.",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    path: "/legacy"
+  },
+  {
+    title: "RISING PROFESSIONALS PROGRAMME",
+    subtitle: "Empowering Early Career Success",
+    description: "A foundational program designed to accelerate the growth of emerging professionals.",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    path: "/rising"
   }
 ];
 
-const Programs = () => {
+function ProgramSection({ program, index }) {
+  const navigate = useNavigate();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
   });
 
-  return (
-    <div id='programmes' className="min-h-screen pt-16 bg-gradient-to-b from-white to-orange-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="space-y-12"
-        >
-          <div className="text-center">
-            <h1  className="font-montserrat text-4xl font-bold text-gray-900 mb-4">Our Programs</h1>
-            <p className=" font-montserrat text-[18px] text-gray-600 max-w-3xl mx-auto">
-              Comprehensive learning journeys designed to transform professionals at every career stage.
-            </p>
-          </div>
+  const handleReadMore = () => {
+    navigate(program.path);
+  };
 
-          <div className="font-montserrat text-[20px] grid grid-cols-1 md:grid-cols-2 gap-8">
-            {programs.map((program, index) => (
-              <ProgramCard
-                key={index}
-                {...program}
-              />
-            ))}
-          </div>
-        </motion.div>
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      className="flex flex-col md:flex-row items-center gap-8 py-16 border-b border-gray-200 last:border-b-0"
+    >
+      <div className="w-full md:w-1/2">
+        <img 
+          src={program.image} 
+          alt={program.title}
+          className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+        />
       </div>
-      <Footer />
+      <div className="w-full md:w-1/2 space-y-4">
+        <h2 className="text-3xl font-bold text-gray-800">{program.title}</h2>
+        <h3 className="text-xl text-gray-600">{program.subtitle}</h3>
+        <p className="text-lg text-gray-600 leading-relaxed">
+          {program.description}
+        </p>
+        <motion.button
+          onClick={handleReadMore}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="read-more text-coral-red font-semibold inline-flex items-center group"
+        >
+          Read more
+          <svg 
+            className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </motion.button>
+      </div>
+    </motion.div>
+  );
+}
+
+function Programs() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <div 
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '70vh',
+          width: '100%',
+          position: 'relative'
+        }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center text-white"
+          >
+            <h1 className="text-5xl font-bold mb-4">Our Programs</h1>
+            <p className="text-xl max-w-2xl mx-auto">
+              Empowering leaders and organizations through world-class education and development programs
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Programs Section */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {programs.map((program, index) => (
+          <ProgramSection key={index} program={program} index={index} />
+        ))}
+      </main>
     </div>
   );
-};
+}
 
 export default Programs;

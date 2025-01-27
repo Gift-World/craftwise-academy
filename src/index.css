@@ -10,6 +10,53 @@
 :root {
   scroll-behavior: smooth;
 }
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --color-coral-red: #FF6B6B;
+}
+
+.read-more {
+  position: relative;
+  overflow: hidden;
+  color: var(--color-coral-red);
+}
+
+.read-more::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-coral-red);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.read-more:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-coral-red {
+  color: var(--color-coral-red);
+}
+
+/* Smooth transitions */
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
 
 body {
   margin: 0;
