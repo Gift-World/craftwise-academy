@@ -56,7 +56,7 @@ const ImpactSection = () => {
             CraftWise Academy doesn't just teach; we create leaders, innovators, and changemakers.
           </motion.p>
 
-          <div style={{ fontFamily: 'Nexa ' }} className=" text-[17px] grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className=" font-montserrat font-semibold text-[17px] grid grid-cols-1 md:grid-cols-3 gap-8">
             {impacts.map((impact, index) => (
               <ImpactCard key={index} {...impact} index={index} />
             ))}

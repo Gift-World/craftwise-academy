@@ -31,7 +31,7 @@ const CraftersAssemblySection = () => {
 
   return (
     <div id='crafters'  className=" min-h-screen bg-gradient-to-b from-orange-50 to-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ const CraftersAssemblySection = () => {
             THE CRAFTERS ASSEMBLY
           </motion.h2>
 
-          <div style={{ fontFamily: 'Nexa ' }} className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-2xl">
+          <div className="font-montserrat text-[18px] grid grid-cols-1 lg:grid-cols-2 gap-12 ">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
