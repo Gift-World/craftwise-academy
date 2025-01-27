@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
-
+import Footer from '../components/Footer/Footer';
 const programs = [
   {
     title: "NEW MANAGERS PROGRAMME",
@@ -126,6 +126,7 @@ function Programs() {
           <ProgramSection key={index} program={program} index={index} />
         ))}
       </main>
+      <Footer />
     </div>
   );
 }
