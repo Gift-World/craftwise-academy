@@ -36,10 +36,10 @@ export default function Hero() {
         <h1 className=' p-32 text-white  mt-24 font-montserrat font-bold text-7xl'><strong>CRAFTWISE <br></br>ACADEMY</strong></h1>
        
 
-        <p className=' p-9 font-montserrat text-white text-3xl font-medium' >Experience Learning, <br></br> That Changes Everything.</p>
+        <p className='pl-20 p-9 font-montserrat text-white text-3xl font-medium' >Experience Learning, <br></br> That Changes Everything.</p>
         <motion.div
           ref={ref}
-          className="md:w-1/2 p-4 text-white z-10 space-y-6"
+          className="md:w-1/2 pl-20 p-4 text-white z-10 space-y-6"
           initial={{ x: -100, opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : {}}
           transition={{ duration: 1.8 }}
@@ -48,9 +48,9 @@ export default function Hero() {
 
           
 
-          <Link to="/programs">
+          <Link  to="/programs">
             <motion.button
-              className="relative flex items-center justify-center gap-2 px-5 py-2.5 text-white font-bold text-sm bg-accent border border-white/30 rounded-full shadow-lg overflow-hidden hover:scale-105 hover:border-white/60 transition-transform duration-300 ease-in-out"
+              className="relative flex items-center justify-center gap-2 px-5 py-3 text-white font-bold text-sm bg-accent border border-white/30 rounded-full shadow-lg overflow-hidden hover:scale-105 hover:border-white/60 transition-transform duration-300 ease-in-out "
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -58,7 +58,7 @@ export default function Hero() {
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
-                className="w-6 h-6"
+                className="w-6 h-6  "
               >
                 <path
                   clipRule="evenodd"
