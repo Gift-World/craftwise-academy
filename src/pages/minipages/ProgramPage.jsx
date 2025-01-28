@@ -132,9 +132,9 @@ const ProgramPage = ({
           >
             Express Interest
           </button>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all">
+         <a href="https://0au0uzstrck.typeform.com/to/EcsAcnpt" target="_blank" ><button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all">
             Apply Now
-          </button>
+          </button></a>
         </motion.div>
       </div>
 
