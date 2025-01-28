@@ -5,7 +5,7 @@ const LegacyLeadersProgram = () => {
   const programData = {
     title: "LEGACY LEADERS PROGRAMME",
     subtitle: "Shaping Organizational Transformation",
-    backgroundImage: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    backgroundImage: "https://i.imgur.com/qsWTkfs.png",
     features: [
       {
         title: "Visionary Leadership",

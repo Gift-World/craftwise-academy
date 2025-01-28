@@ -5,7 +5,7 @@ const NewManagersProgram = () => {
   const programData = {
     title: "NEW MANAGERS PROGRAMME",
     subtitle: "Transitioning from Individual Contributor to Leader",
-    backgroundImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    backgroundImage: "https://i.imgur.com/Y94ziMX.png",
     features: [
       {
         title: "Leadership Foundations",

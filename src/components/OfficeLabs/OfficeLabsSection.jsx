@@ -42,7 +42,7 @@ const OfficeLabsSection = () => {
               className="relative"
             >
               <img
-                src="https://i.imgur.com/hArS09X.jpeg"
+                src="https://i.imgur.com/zPfjSp1.png"
                 alt="Office environment"
                 className="rounded-lg shadow-xl mt-0"
               />

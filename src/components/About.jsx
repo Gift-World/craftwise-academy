@@ -60,7 +60,7 @@ More than just a training center—CraftWise Academy is where career advancement
             className="relative"
           >
             <img 
-              src="https://i.imgur.com/zQOstOI.jpeg"
+              src="https://i.imgur.com/W2xsiYt.png"
               alt="Professional training session"
               className="rounded-lg shadow-2xl"
             />

@@ -5,7 +5,7 @@ const RisingProfessionalsProgram = () => {
   const programData = {
     title: "RISING PROFESSIONALS PROGRAMME",
     subtitle: "Empowering Early Career Success",
-    backgroundImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    backgroundImage: "https://i.imgur.com/6GjLRZC.png",
     features: [
       {
         title: "Corporate Readiness",

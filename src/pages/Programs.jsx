@@ -7,28 +7,28 @@ const programs = [
     title: "NEW MANAGERS PROGRAMME",
     subtitle: "Transitioning from Individual Contributor to Leader",
     description: "A comprehensive program designed for new managers, focusing on essential leadership skills and team management fundamentals.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://i.imgur.com/Y94ziMX.png",
     path: "/managers"
   },
   {
     title: "EMERGING LEADERS PROGRAMME",
     subtitle: "Preparing for Senior Leadership Roles",
     description: "An advanced program for emerging leaders ready to take on greater organizational responsibilities.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://i.imgur.com/1NTh8oR.png",
     path: "/emerging"
   },
   {
     title: "LEGACY LEADERS PROGRAMME",
     subtitle: "Shaping Organizational Transformation",
     description: "An executive program focused on building lasting organizational impact and cultural transformation.",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://i.imgur.com/qsWTkfs.png",
     path: "/legacy"
   },
   {
     title: "RISING PROFESSIONALS PROGRAMME",
     subtitle: "Empowering Early Career Success",
     description: "A foundational program designed to accelerate the growth of emerging professionals.",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://i.imgur.com/6GjLRZC.png",
     path: "/rising"
   }
 ];

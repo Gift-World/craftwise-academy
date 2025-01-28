@@ -5,7 +5,7 @@ const EmergingLeadersProgram = () => {
   const programData = {
     title: "*EMERGING* LEADERS PROGRAMME",
     subtitle: "Preparing for Senior Leadership Roles",
-    backgroundImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    backgroundImage: "https://i.imgur.com/1NTh8oR.png",
     features: [
       {
         title: "Strategic Impact",
