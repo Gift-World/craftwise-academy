@@ -10,9 +10,9 @@ const ServiceCard = ({ title, description, icon, delay }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ delay, duration: 0.6 }}
+      transition={{ delay, duration: 0.4 }}
       className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
     >
       <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
@@ -37,10 +37,10 @@ const WhatWeDo = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.5 }}
           className="text-center mb-4"
         >
-          <h2  className="text-4xl font-montserrat font-bold text-gray-900 mb-4">
+          <h2  className="text-4xl font-montserrat font-bold text-gray-900 mb-10">
             We Serve ...
           </h2>
          
@@ -71,7 +71,7 @@ const WhatWeDo = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           className="text-center mb-4"
         >
          

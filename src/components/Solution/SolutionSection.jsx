@@ -23,7 +23,7 @@ const approaches = [
 const SolutionSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0
   });
 
   return (
@@ -33,7 +33,7 @@ const SolutionSection = () => {
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.1 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <div>
@@ -41,7 +41,7 @@ const SolutionSection = () => {
               className="text-4xl font-montserrat font-bold text-gray-900 mb-6"
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.1 }}
             
             >
                CraftWise's Unique Approach:
@@ -50,7 +50,7 @@ const SolutionSection = () => {
               className=" font-montserrat text-[19px] text-gray-800 font-medium mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.1 }}
               
             >
               Breaking away from the traditional, overcrowded training market!!!
@@ -67,7 +67,7 @@ const SolutionSection = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
             className="relative"
           >
             <img 
@@ -84,7 +84,7 @@ const SolutionSection = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-4"
         >
          
