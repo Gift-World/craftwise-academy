@@ -23,34 +23,29 @@ const approaches = [
 const SolutionSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0
+    threshold: 0.1
   });
 
   return (
-    <div className="min-h-screen pt-0 bg-gradient-to-b from-white to-orange-50">
+    <div className=" mt-0 bg-gradient-to-b from-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.1 }}
+        <div
+          
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <div>
-            <motion.h1 
+            <h1 
               className="text-4xl font-montserrat font-bold text-gray-900 mb-6"
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ delay: 0.1 }}
+              
             
             >
                CraftWise's Unique Approach:
-            </motion.h1>
+            </h1>
             <motion.p 
               className=" font-montserrat text-[19px] text-gray-800 font-medium mb-8"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.1 }}
+              transition={{ delay: 0.4 }}
               
             >
               Breaking away from the traditional, overcrowded training market!!!
@@ -64,10 +59,8 @@ const SolutionSection = () => {
             </div>
           </div>
           
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.2, duration: 0.3 }}
+          <div
+           
             className="relative"
           >
             <img 
@@ -75,9 +68,9 @@ const SolutionSection = () => {
               alt="Innovative learning"
               className="rounded-lg shadow-2xl"
             />
-            <div className="absolute -top-4 -right-4 w-24 h-24 text-4xl">💡</div>
-          </motion.div>
-        </motion.div>
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 text-4xl">💡</div>
+          </div>
+        </div>
         
       </div>
       <motion.div
