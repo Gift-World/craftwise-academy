@@ -25,8 +25,22 @@ const ProgramPage = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    
+    // Create email content
+    const subject = encodeURIComponent(`Program Interest from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message: ${formData.message}`
+    );
+    
+    // Create mailto link
+    const mailtoLink = `mailto:charlesgiftangila@gmail.com?subject=${subject}&body=${body}&from=${formData.email}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    // Close the form
     setShowForm(false);
   };
 
@@ -132,9 +146,11 @@ const ProgramPage = ({
           >
             Express Interest
           </button>
-         <a href="https://0au0uzstrck.typeform.com/to/EcsAcnpt" target="_blank" ><button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all">
-            Apply Now
-          </button></a>
+          <a href="https://0au0uzstrck.typeform.com/to/EcsAcnpt" target="_blank" rel="noopener noreferrer">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all">
+              Apply Now
+            </button>
+          </a>
         </motion.div>
       </div>
 
@@ -214,3 +230,4 @@ const ProgramPage = ({
 };
 
 export default ProgramPage;
+
