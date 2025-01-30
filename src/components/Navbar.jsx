@@ -28,7 +28,7 @@ const Navbar = () => {
             </Link>
             .
             <Link to="/contact"  className=" font-montserrat font-medium text-[15px]  inline-flex items-center px-1 pt-1 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none">
-              Contact us
+              Contact 
             </Link>
           </div>
         </div>
